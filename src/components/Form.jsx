@@ -74,7 +74,7 @@ const Form = ({ setTemplate, setSpeach, speach }) => {
             </div>
             <div className='flex items-center justify-around flex-wrap gap-2'>
                 <Button type='submit' bg='indigo' name='Generate' color="white"/>
-                <Button type='button' bg='sky' name='Clear' color="white" onclick={resetForm}/>
+                <Button type='button' bg='indigo' name='Clear' color="white" onclick={resetForm}/>
             </div>
             {speach && <textarea rows="10" className="border-[1.5px] block p-2.5 w-full text-sm transition-all text-gray-900 border-gray-300 focus:border-indigo-800 focus:outline-none rounded-md" placeholder="Write your thoughts here..." value={speach} onChange={e => setSpeach(e.target.value)}></textarea>}
         </form> 
